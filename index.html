@@ -2,6 +2,9 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=2.0">
+
 	<title>This My first website</title>
 	
 	<!-- slider -->
@@ -16,11 +19,12 @@
 	
 	<link rel="stylesheet" href="css/responsive.css" />
 	
+	
 </head>
 <body>
 
 		<!-- start social share -->
-		<div id="social_share">
+	<div id="social_share">
 			<ul>
 				<li><a href="#"><img src="img/facebook.png" alt="facebook share" /></a></li>
 				<li><a href="#"><img src="img/twitter.png" alt="twitter share" /></a></li>
@@ -29,7 +33,7 @@
 				<li><a href="#"><img src="img/google_plus.png" alt="google_plus share" /></a></li>
 			</ul>
 			
-		</div>
+		</div> 
 		<!-- end social share -->
 
 		<!-- star header -->
@@ -52,7 +56,7 @@
 			<div class="wrap">
 				<nav>
 					<div id="nav">
-						<ul class="menu">
+						<ul id="menu">
 							<li ><a href="#">Home</a></li>
 							<li><a href="inside.html">About</a></li>
 							<li><a href="#">Menu Item</a>
@@ -220,10 +224,22 @@
 	</div>
 		<!-- end footer -->
 
+	<!-- jQuery Min Version -->	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	
 	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-	
+
+	<script src="js/responsive-menu.js"></script>		
+	<script>
+	  domready(function(){
+				selectnav('menu', {
+			label: '*** Select Nav *** '
+		});
+		prettyPrint()
+			})
+	</script>
+
 	
     <script type="text/javascript">
     $(window).load(function() {
